@@ -1,0 +1,34 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "status": "draft",
+      "zip_code": "60622",
+      "email_address": "john.doe@example.com",
+      "homeowner": true,
+      "currently_insured": true
+    }
+  ],
+  "vehicles": [
+    {
+      "id": 1,
+      "quote_id": 1,
+      "make": "Acura",
+      "model": "MDX",
+      "year": 2017,
+      "trim": null,
+      "registered_state": "IL",
+      "use_code": "commuting"
+    },
+    {
+      "id": 2,
+      "quote_id": "2",
+      "make": "Acura",
+      "model": "MDX",
+      "year": 2017,
+      "trim": null,
+      "registered_state": "IL",
+      "use_code": "commuting"
+    }
+  ]
+}
