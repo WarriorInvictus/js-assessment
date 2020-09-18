@@ -14,11 +14,13 @@ Your goal is to create a simple React (preferred, but Angular or Vue are accepta
 
 To complete the assessment, build a React app that satisfies the following two user stories. You can use this react app base or start a new one if you'd like. Make sure to use Git to save your progress. Once completed, zip of the entire directory and send back to our team for review.
 
-There are two user stories and some API documentation, including schema and request/response sample. These should be helpful in writing your code. Don't hesitate to reach out with any questions.
+There is a user story and some API documentation, including schema and request/response sample. These should be helpful in writing your code. Don't hesitate to reach out with any questions.
 
-## User Stories
+**Please Note**: you should only spend 2-3 hours on this assessment, even if you haven't finished all of the requirements. We prefer quality, incomplete work over sloppy or rushed delivery. You are welcome to submit some notes about your solution, how you would refactor, or any additional notes worth sharing.
 
-### 1. As a User with a draft Quote, I can add a Vehicle to my Quote by selecting the year, make, and model from a list of dropdowns.
+## User Story
+
+### As a User with a draft Quote, I can add a Vehicle to my Quote by selecting the year, make, and model from a list of dropdowns.
 
 **Acceptance Criteria**
 
@@ -26,11 +28,12 @@ There are two user stories and some API documentation, including schema and requ
 - [ ] Verifies can select a year from 1980 to 2021
 - [ ] Verifies `make` is required
 - [ ] Verifies can select a `make` from a dropdown menu
-- [ ] Verifies `make`s are ordered alphabetically
+- [ ] **UPGRADE** Verifies `make`s are ordered alphabetically
 - [ ] **UPGRADE** Verifies I can type to filter down the list of `make`s
 - [ ] Verifies I can select a `model` based on the `year` and `make`
 - [ ] Verifies `model` is required
 - [ ] **UPGRADE** Verifies I can type to filter down the list of `model`s
+- [ ] **UPGRADE** Verifies I can submit up to three vehicles and submit button will disable
 
 To populate your `make` and `model` dropdowns, you'll need to connect to the [NHTSA API](https://vpic.nhtsa.dot.gov/api/). Their API is completely free and does not require authentication. Here are the URLs that you can use to make the request:
 
@@ -48,17 +51,6 @@ curl -X GET -i https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformake/acura?fo
 ```
 
 _Make sure you swap out `acura` in that above query with the name of the make from the previous request for vehicle makes, e.g. `toyota`, `honda`, etc._
-
-
-### 2. As a User with a Vehicle added to my draft Quote, I can add another Vehicle
-
-**Acceptance Criteria**
-
-- [ ] Verifies can add up to 3 vehicles
-- [ ] Verifies can add the same vehicle type
-
-_Any acceptance criteria labeled **UPGRADE** is not required. If you have the time and want to add the additional functionality, then you are welcome to. But please don't spend more than 3 hours total on this assessment._
-
 
 ## Project Setup
 
