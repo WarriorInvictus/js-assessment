@@ -137,7 +137,7 @@ $ curl --request POST \
 
 Response will look like this;
 
-```json
+```js
 {
   "id": 1,                  // Unique identifier that's automatically created
   "quote_id": 1,            // ID of the quote that the vehicle is being added to
